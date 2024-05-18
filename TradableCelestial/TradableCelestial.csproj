@@ -8,7 +8,7 @@
     <LangVersion>12.0</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\Common\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <ReferencePath>$(ChronoArkGamePath)/ChronoArk_Data/Managed</ReferencePath>
@@ -19,19 +19,19 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <OutputPath>$(ChronoArkGamePath)\Mod\TradableCelestial\Assemblies\</OutputPath>
+    <OutputPath>$(ChronoArkGamePath)\Mod\$(AssemblyName)\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <Optimize>false</Optimize>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <OutputPath>$(ChronoArkGamePath)\Mod\TradableCelestial\Assemblies\</OutputPath>
+    <OutputPath>$(ChronoArkGamePath)\Mod\$(AssemblyName)\Assemblies\</OutputPath>
     <Optimize>true</Optimize>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>bin\Debug\0Harmony.dll</HintPath>
+      <HintPath>..\..\Common\bin\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Accessibility">
       <Private>False</Private>
@@ -49,22 +49,22 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Mono.Cecil">
-      <HintPath>bin\Debug\Mono.Cecil.dll</HintPath>
+      <HintPath>..\..\Common\bin\Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil.Mdb">
-      <HintPath>bin\Debug\Mono.Cecil.Mdb.dll</HintPath>
+      <HintPath>..\..\Common\bin\Mono.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil.Pdb">
-      <HintPath>bin\Debug\Mono.Cecil.Pdb.dll</HintPath>
+      <HintPath>..\..\Common\bin\Mono.Cecil.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil.Rocks">
-      <HintPath>bin\Debug\Mono.Cecil.Rocks.dll</HintPath>
+      <HintPath>..\..\Common\bin\Mono.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="MonoMod.RuntimeDetour">
-      <HintPath>bin\Debug\MonoMod.RuntimeDetour.dll</HintPath>
+      <HintPath>..\..\Common\bin\MonoMod.RuntimeDetour.dll</HintPath>
     </Reference>
     <Reference Include="MonoMod.Utils">
-      <HintPath>bin\Debug\MonoMod.Utils.dll</HintPath>
+      <HintPath>..\..\Common\bin\MonoMod.Utils.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <Private>False</Private>
